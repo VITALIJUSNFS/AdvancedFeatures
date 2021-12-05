@@ -13,8 +13,8 @@ public class Calculator {
 
     public int addMultipleNumbers(int[] numbers) {
         int total = 0;
-        for (int i = 0; i < numbers.length; i++) {
-            total += numbers[i];
+        for (int number : numbers) {
+            total += number;
         }
         return total;
     }
