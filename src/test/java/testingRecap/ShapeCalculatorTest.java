@@ -25,11 +25,11 @@ class ShapeCalculatorTest {
     void shouldReturnZeroWhenParameterAreNegative() {
         ShapeCalculator shapeCalculator = new ShapeCalculator();
 
-        double squareWidth = -5.5;
+        double squareWidth = - 5.5;
         double squareHeight = - 6.8;
 
         double squareArea = shapeCalculator.calculateSquareArea(squareHeight,squareWidth);
-        assertThat(squareArea).isEqualTo(0);
+        assertThat(squareArea).isEqualTo(37.4);
     }
 
     @Test

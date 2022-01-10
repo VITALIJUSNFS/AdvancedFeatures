@@ -15,5 +15,12 @@ public class Main {
         classDogExercise.setWeight(0);
         System.out.println(classDogExercise);
 
+        System.out.println("**********Money");
+        PocketTest money = new PocketTest();
+        money.setMoney(50);
+        System.out.println(money);
+
+
+
     }
 }

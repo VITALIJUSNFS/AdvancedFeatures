@@ -3,6 +3,7 @@ package encapsulation;
 public class Person {
     private String name;
     private int personalNumber;
+    private int value;
     private String eyeColor;
 
     public String getName() {
