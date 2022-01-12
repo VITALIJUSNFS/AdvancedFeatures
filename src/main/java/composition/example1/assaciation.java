@@ -40,12 +40,9 @@ class Heart {
 
     }
 }
-
 class Brain {
     int size;
-
     void think() {
-
     }
 }
 

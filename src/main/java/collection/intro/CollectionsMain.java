@@ -25,8 +25,6 @@ public class CollectionsMain {
         klasiokai.add("Paulius");
         klasiokai.add("Gintas");
         klasiokai.add("Tadas");
-
-
         //Set neislaiko eiliskuma ir
 
         for (String klasiokas : klasiokai) {
@@ -50,9 +48,6 @@ public class CollectionsMain {
 
             for (String reiksme : telefonai.keySet()) {
                 System.out.println(reiksme);
-
-
-
             }
             System.out.println();
 
@@ -60,7 +55,6 @@ public class CollectionsMain {
                 System.out.println(stringPhoneEntry.getKey() + " -> " + stringPhoneEntry.getValue());
             }
         }
-
     }
 }
 
