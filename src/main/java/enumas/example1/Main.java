@@ -6,9 +6,12 @@ public class Main {
         System.out.println(day);
 
         for (DaysOfWeek singleDay : DaysOfWeek.values()) {
-            System.out.println(singleDay);
+            System.out.print("  "+ singleDay);
+
 
         }
+        System.out.println();
+        System.out.println("*****************************");
 
         boolean isOrderReceived = true;
         if (isOrderReceived) {

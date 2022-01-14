@@ -48,6 +48,13 @@ public class ShopMain {
 
         System.out.println("**************Items bought********************");
         System.out.println(itemsPurchased);
+        itemsPurchased.replace(DaysOfWeek.MON, bread);
+
+        itemsPurchased.replace(DaysOfWeek.SAT, milk);
+
+
+
+
 
 
 
