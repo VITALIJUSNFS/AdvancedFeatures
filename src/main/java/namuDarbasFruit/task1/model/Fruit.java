@@ -1,7 +1,8 @@
-package namuDarbasFruit.task1;
+package namuDarbasFruit.task1.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import namuDarbasFruit.task1.Countries;
 /*
 tevine
  */

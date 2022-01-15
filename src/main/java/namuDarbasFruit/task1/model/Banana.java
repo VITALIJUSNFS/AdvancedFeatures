@@ -1,4 +1,6 @@
-package namuDarbasFruit.task1;
+package namuDarbasFruit.task1.model;
+
+import namuDarbasFruit.task1.Countries;
 
 public class Banana extends Fruit {
 

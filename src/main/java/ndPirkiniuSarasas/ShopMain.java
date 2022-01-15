@@ -1,9 +1,13 @@
 package ndPirkiniuSarasas;
 
+import ndPirkiniuSarasas.Enums.DaysOfWeek;
+
 import java.util.*;
 
 public class ShopMain {
     public static void main(String[] args) {
+
+        List<Items> warehouseListAndQuantities = new ArrayList<>();
 
 
         Items apple = new Items("Apple", 5.2, 100);
@@ -14,7 +18,7 @@ public class ShopMain {
         Items bread = new Items("Bread", 3.5, 100);
         Items rice = new Items("Rice", 1, 100);
 
-        List<Items> warehouseListAndQuantities = new ArrayList<>();
+
         warehouseListAndQuantities.add(apple);
         warehouseListAndQuantities.add(tv);
         warehouseListAndQuantities.add(mouse);
@@ -51,6 +55,8 @@ public class ShopMain {
         itemsPurchased.replace(DaysOfWeek.MON, bread);
 
         itemsPurchased.replace(DaysOfWeek.SAT, milk);
+//        itemsPurchased.replace(DaysOfWeek.SAT, itemsPurchased.replace();
+
 
 
 

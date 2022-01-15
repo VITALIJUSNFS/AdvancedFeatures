@@ -1,5 +1,10 @@
 package namuDarbasFruit.task1;
 
+import namuDarbasFruit.task1.model.Banana;
+import namuDarbasFruit.task1.model.Fruit;
+import namuDarbasFruit.task1.model.Orange;
+import namuDarbasFruit.task1.model.Watermelon;
+
 import java.util.ArrayList;
 import java.util.List;
 
