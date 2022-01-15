@@ -96,7 +96,6 @@ public class SearchService {
         String playerName = null;
 
         for (AirPlane airPlane : airPlanes) {
-
             List<Player> players = airPlane.getTeam().getPlayers();
             for (Player player : players) {
                 if (player.getSalary() > expensivePlayer) {
@@ -121,8 +120,21 @@ public class SearchService {
         return players;
     }
 
-    public List<Player> xxx (List<AirPlane> airPlanes) {
+    public List<String> skillMoveShooter(List<AirPlane> airPlanes) {
+        List<String> players = new ArrayList<>();
 
+        for (AirPlane airPlane : airPlanes) {
+            for (Player player : airPlane.getTeam().getPlayers()) {
+                if (player.getSkillMove().equals(SkillMove.THREE_POINT_SHOOTER)) {
+                    players.add(player.firstName + " " + player.lastName);
+                }
+            }
+        }
+        return players;
     }
 
+
 }
+
+
+

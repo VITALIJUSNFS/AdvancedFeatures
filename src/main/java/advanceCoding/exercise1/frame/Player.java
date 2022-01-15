@@ -22,6 +22,10 @@ public class Player extends Person {
         return experience;
     }
 
+    public SkillMove getSkillMove() {
+        return skillMove;
+    }
+
     public String getNationality() {
         return nationality;
     }

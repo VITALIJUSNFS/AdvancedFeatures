@@ -10,13 +10,8 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-
         // PopulateDataService.prepareData() - - CTRL+ALT+V
         List<AirPlane> airPlanes = PopulateDataService.prepareData();
-
-//        for (AirPlane airPlane : airPlanes){
-//            System.out.println(airPlane.getTeam());
-//        }
 
         for (AirPlane airPlane : airPlanes) {
             System.out.println("Lektuvas " + airPlane.getCompanyName());
@@ -30,13 +25,29 @@ public class Main {
                 System.out.println(player);
 
             }
-            System.out.println();
+            System.out.println("**************************************************************");
         }
+
+//        System.out.println("/** " +
+//                "/**\n" +
+//                " * 1. Surasti lektuva, kuriame skrenda Jasikevicius\n" +
+//                " * 2. Surasti visus trenerius, kurie yra pikti :)\n" +
+//                " * 3. Surasti lektuve esancias komandas, kuriu pavadinimai ilgesni nei 5 raides.\n" +
+//                " * 4. Surasti lektuva, kurio greitis didesnis nei 1000\n" +
+//                " * 5. Surasti komanda, kuri turi daugiau zaideju.\n" +
+//                " * 6. Surasti komanda, kuri turi daugiau patirties (sumuoti zaideju patirtis)\n" +
+//                " * 7. Surasti brangiausia komandos zaideja.\n" +
+//                " * 8. Surasti visus zaidejus is visu komandu, kurie yra is USA\n" +
+//                " * 9. Isrinkti is visu komandu zaidejus, kurie turi THREE_POINT_SHOOTER igudi\n" +
+//                " * 10. Apkeisti komandu trenerius.\n" +
+//                " */");
+
         SearchService searchService = new SearchService();
-        System.out.print("1. Found plane for Jasikevicius flying:  ");
+
+        System.out.print("1. Lektuvas, kuriame skrenda Jasikevicius:  ");
         System.out.println(searchService.findPlane("Jasikevicius",airPlanes));
 
-        System.out.println("2. Found angry coaches: ");
+        System.out.println("2. Treneriai, kurie yra pikti : ");
         System.out.println(searchService.findCoaches(airPlanes));
 
         System.out.print("3. Pavadinimai ilgesni nei 5 raides");
@@ -57,11 +68,11 @@ public class Main {
         System.out.print("8. Surasti visus zaidejus is visu komandu, kurie yra is USA ");
         System.out.println(searchService.playersFromUSA(airPlanes));
 
-        System.out.print("9. Isrinkti is visu komandu zaidejus, kurie turi THREE_POINT_SHOOTER igudi ");
-        System.out.println(searchService.playersFromUSA(airPlanes));
+        System.out.print("9. Isrinkti is visu komandu zaidejus, kurie turi THREE_POINT_SHOOTER igudi: ");
+        System.out.println(searchService.skillMoveShooter(airPlanes));
 
-
-
+        System.out.print("10. Apkeisti komandu trenerius ");
+        System.out.println(searchService.skillMoveShooter(airPlanes));
 
     }
 }

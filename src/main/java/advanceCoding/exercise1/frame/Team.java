@@ -15,4 +15,7 @@ public class Team {
     private List<Player> players;
     private Coach coach;
 
+    public Coach getCoach() {
+        return coach;
+    }
 }
